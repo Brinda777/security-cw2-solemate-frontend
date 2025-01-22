@@ -75,7 +75,6 @@ export const khaltiApi  = (data) => axios.post('https://dev.khalti.com/api/v2/ep
     "purchase_order_name": "test",
     "customer_info": {
         "name": "Brinda Bhattarai",
-        // "email": "example@gmail.com",
         "phone": "9800000123"
     },
     "amount_breakdown": [
