@@ -42,7 +42,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/" className="social-icon"><i className="fab fa-facebook-f"></i></a>
                 <a href="https://www.x.com/" className="social-icon"><i className="fab fa-twitter"></i></a>
                 <a href="https://instagram.com/" className="social-icon"><i className="fab fa-instagram"></i></a>
-                <a href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
+                <a href="https://linkedin.com/" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <div className="footer-bottom">
                 <p>&copy; {new Date().getFullYear()} Sole Mate. All rights reserved.</p>
