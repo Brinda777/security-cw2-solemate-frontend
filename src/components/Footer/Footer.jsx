@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>Contact</h4>
                     <p>Bhairahawa, Nepal</p>
-                    <p>Email: help@walkwise.com</p>
+                    <p>Email: help@solemate.com</p>
                     <p>Phone: +977-9862712973</p>
                 </div>
                 <div className="footer-section">
