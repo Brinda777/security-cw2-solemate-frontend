@@ -39,7 +39,6 @@
     font-size: 18px;
     box-sizing: border-box;
     margin-bottom: 0;
-    /* Ensure there's no extra margin at the bottom */
 }
 
 .loginsignup-container button {
