@@ -23,24 +23,6 @@ const ShopContextProvider = (props) => {
 
   
   
-  // const addToCart = (itemId) => {
-  //   if (!localStorage.getItem("auth-token")) {
-  //     alert("Please Login");
-  //     return;
-  //   }
-  //   setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-  //   if (localStorage.getItem("auth-token")) {
-  //     fetch(`${backend_url}/addtocart`, {
-  //       method: 'POST',
-  //       headers: {
-  //         Accept: 'application/form-data',
-  //         'auth-token': `${localStorage.getItem("auth-token")}`,
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({ "itemId": itemId }),
-  //     })
-  //   }
-  // };
 
   // const removeFromCart = (itemId) => {
   //   setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
