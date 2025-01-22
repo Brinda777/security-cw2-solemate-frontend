@@ -66,7 +66,7 @@ export const getUsersApi = () => Api.get(`/api/user/admin/get-all`, config)
 export const deleteUserApi = (id) => Api.delete(`/api/user/admin/${id}`, config)
 
 
-
+// =========================== Khalti APIS ============================== //
 export const khaltiApi  = (data) => axios.post('https://dev.khalti.com/api/v2/epayment/initiate/', {
     "return_url": "http://localhost:3000/payment-success",
     "website_url": "http://localhost:3000",
