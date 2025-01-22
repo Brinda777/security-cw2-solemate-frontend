@@ -14,26 +14,11 @@ const ShopContextProvider = (props) => {
     return cart;
   };
 
-  //const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
     fetch(`${process.env['REACT_APP_BACKEND_URL']}/product/get-all`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
-
-    // if (localStorage.getItem("auth-token")) {
-    //   fetch(`${backend_url}/getcart`, {
-    //     method: 'POST',
-    //     headers: {
-    //       Accept: 'application/form-data',
-    //       'auth-token': `${localStorage.getItem("auth-token")}`,
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(),
-    //   })
-    //     .then((resp) => resp.json())
-    //     .then((data) => { setCartItems(data) });
-    // }
   }, [])
 
   // const getTotalCartAmount = () => {
