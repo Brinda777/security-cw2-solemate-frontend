@@ -45,7 +45,7 @@ const Footer = () => {
                 <a href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Walkwise. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Sole Mate. All rights reserved.</p>
             </div>
         </footer>
     );
