@@ -56,7 +56,6 @@ const ListProduct = () => {
                             <p>Rs. {product.price}</p>
                             <p>{product.category}</p>
                             
-                            {/* <a href="">edit</a> */}
                             <p>
                                 <a rel="stylesheet" href={`/admin/dashboard/products/edit/${product._id}`} ><button className="edit-product-button">Edit</button></a>
                                 <button className="remove-product-button" onClick={() => removeProduct(product._id)}>Delete</button>
