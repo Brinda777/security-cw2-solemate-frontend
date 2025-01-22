@@ -22,19 +22,7 @@ const ShopContextProvider = (props) => {
   }, [])
 
   
-  // const getTotalCartItems = () => {
-  //   let totalItem = 0;
-  //   for (const item in cartItems) {
-  //     if (cartItems[item] > 0) {
-  //       try {
-  //         let itemInfo = products.find((product) => product.id === Number(item));
-  //         totalItem += itemInfo ? cartItems[item] : 0 ;
-  //       } catch (error) {}
-  //     }
-  //   }
-  //   return totalItem;
-  // };
-
+  
   // const addToCart = (itemId) => {
   //   if (!localStorage.getItem("auth-token")) {
   //     alert("Please Login");
