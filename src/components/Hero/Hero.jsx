@@ -54,7 +54,6 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        {/* Add more slides as needed */}
       </Slider>
     </div>
   );
