@@ -55,12 +55,7 @@ const ListProduct = () => {
                             <p className="cartitems-product-title">{product.title}</p>
                             <p>Rs. {product.price}</p>
                             <p>{product.category}</p>
-                            {/* <img
-                                className="listproduct-remove-icon"
-                                onClick={() => removeProduct(product.id)}
-                                src={'Assets/crossicon.png'}
-                                alt=""
-                            /> */}
+                            
                             {/* <a href="">edit</a> */}
                             <p>
                                 <a rel="stylesheet" href={`/admin/dashboard/products/edit/${product._id}`} ><button className="edit-product-button">Edit</button></a>
