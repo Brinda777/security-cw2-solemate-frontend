@@ -24,20 +24,7 @@ const ShopContextProvider = (props) => {
   
   
 
-  // const removeFromCart = (itemId) => {
-  //   setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
-  //   if (localStorage.getItem("auth-token")) {
-  //     fetch(`${backend_url}/removefromcart`, {
-  //       method: 'POST',
-  //       headers: {
-  //         Accept: 'application/form-data',
-  //         'auth-token': `${localStorage.getItem("auth-token")}`,
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({ "itemId": itemId }),
-  //     })
-  //   }
-  // };
+  
 
   // const contextValue = { products, getTotalCartItems, cartItems, addToCart, removeFromCart, getTotalCartAmount };
   const contextValue = { products };
