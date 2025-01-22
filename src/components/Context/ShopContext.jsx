@@ -14,19 +14,12 @@ const ShopContextProvider = (props) => {
     return cart;
   };
 
-
   useEffect(() => {
     fetch(`${process.env['REACT_APP_BACKEND_URL']}/product/get-all`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
   }, [])
 
-  
-  
-
-  
-
-  // const contextValue = { products, getTotalCartItems, cartItems, addToCart, removeFromCart, getTotalCartAmount };
   const contextValue = { products };
   return (
     <ShopContext.Provider value={contextValue}>
