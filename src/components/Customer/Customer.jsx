@@ -34,7 +34,6 @@ const ListCustomer = () => {
         <div className="listproduct">
             <h1>Customers</h1>
             <div className="listproduct-header">
-                {/* <a rel="stylesheet" href="/admin/dashboard/products/add" >  <button className="add-product-button">Add Product </button></a> */}
             </div>
             <div className="listproduct-format-main">
                 <p>Image</p> <p>Full Name</p> <p>Email</p> <p>Phone</p> <p>Actions</p>
