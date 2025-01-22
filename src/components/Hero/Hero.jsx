@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './Hero.css';  // Ensure this path is correct
+import './Hero.css';  
 import { Link } from 'react-router-dom';
 
 // Slider settings
