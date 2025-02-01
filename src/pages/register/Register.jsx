@@ -31,28 +31,36 @@ const Register = () => {
     const handleOtp = (e) => setOtp(e.target.value);
 
     // Validation function
-    const validate = () => {
-        let isValid = true;
+const validate = () => {
+    let isValid = true;
 
-        if (fullName.trim() === "") {
-            setFullNameError("Fullname is Required");
+    if (fullName.trim() === "") {
+        setFullNameError("Fullname is Required");
+        isValid = false;
+    }
+    if (phone.trim() === "") {
+        setPhoneError("Phone is Required");
+        isValid = false;
+    }
+    if (email.trim() === "") {
+        setEmailError("Email is Required");
+        isValid = false;
+    }
+    if (password.trim() === "") {
+        setPasswordError("Password is Required");
+        isValid = false;
+    } else {
+        // Password strength check
+        const passwordStrength = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        if (!passwordStrength.test(password)) {
+            setPasswordError("Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character.");
             isValid = false;
         }
-        if (phone.trim() === "") {
-            setPhoneError("Phone is Required");
-            isValid = false;
-        }
-        if (email.trim() === "") {
-            setEmailError("Email is Required");
-            isValid = false;
-        }
-        if (password.trim() === "") {
-            setPasswordError("Password is Required");
-            isValid = false;
-        }
+    }
 
-        return isValid;
-    };
+    return isValid;
+};
+
 
     // Submit form and trigger OTP modal
     const handleSubmit = (e) => {

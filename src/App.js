@@ -30,6 +30,7 @@ import AdminRoute from './protectedRoutes/adminRoute';
 import ListCustomer from './components/Customer/Customer';
 import ListOrder from './components/Order/Order';
 import PaymentSuccess from './utils/payment/PaymentSuccess';
+import UnauthorizedPage from './pages/unauthorized/Unauthorized';
 
 
 function App() {
@@ -61,7 +62,8 @@ function App() {
           <Route path='/admin/dashboard/products/edit/:id' element={<EditProduct />} />
           <Route path='/admin/dashboard/customers' element={<ListCustomer />} />
           <Route path='/admin/dashboard/orders' element={<ListOrder />} />
-        </Route>   
+        </Route>
+        <Route path="/unauthorized" element={<UnauthorizedPage />} />
       </Routes>
       <Footer/>
     </Router>

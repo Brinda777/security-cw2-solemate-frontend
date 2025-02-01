@@ -9,7 +9,7 @@ const Item = (props) => {
         <img
           className='item-image'
           onClick={window.scrollTo(0, 0)}
-          src={'http://localhost:5000/products/' + props.image}
+          src={process.env['REACT_APP_BACKEND_IMAGE_URL'] + props.image}
           alt="products"
         />
       <div className="item-info">

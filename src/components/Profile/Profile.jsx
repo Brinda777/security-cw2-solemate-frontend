@@ -79,7 +79,7 @@ const Profile = () => {
                 <div className="profile-header">
                     <div className="profile-picture">
                         <img
-                            src={'http://localhost:5000/users/' + user.imageUrl}
+                            src={process.env['REACT_APP_BACKEND_URL']+'/users/' + user.imageUrl}
                             alt="Profile"
                             onError={({ currentTarget }) => {
                                 currentTarget.onerror = null; // prevents looping
